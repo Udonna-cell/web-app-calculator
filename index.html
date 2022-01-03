@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <main>
+
+      <section class="calculator">
+
+        <form name="cal">
+
+          <section class="screen">
+
+            <input type="text" name="solve" id="solve" disabled>
+
+            <hr>
+
+            <input type="text" name="answer" id="answer" disabled>
+
+          </section>
+
+          <br>
+
+          <section class="contain">
+
+            <div class="btn" id="del" onclick="cal.solve.value = cal.solve.value.substr(0, cal.solve.value.length - 1)">⌦</div>
+            <div class="btn" id="per" onclick="cal.solve.value +='/100'">%</div>
+            <div class="btn" id="clear" onclick="cal.solve.value = ''; cal.answer.value = ''">ac</div>
+            <div class="btn" id="div" onclick="cal.solve.value += '/'">÷</div>
+
+            <div class="dive" id="seven" onclick="cal.solve.value += '7'">7</div>
+            <div class="dive" id="eight" onclick="cal.solve.value += '8'">8</div>
+            <div class="dive" id="nine" onclick="cal.solve.value += '9'">9</div>
+            <div class="btn" id="mul" onclick="cal.solve.value += '*'">×</div>
+
+            <div class="dive" id="four" onclick="cal.solve.value += '4'">4</div>
+            <div class="dive" id="five" onclick="cal.solve.value += '5'">5</div>
+            <div class="dive" id="six" onclick="cal.solve.value += '6'">6</div>
+            <div class="btn" id="sub" onclick="cal.solve.value += '-'">-</div>
+
+            <div class="dive" id="one" onclick="cal.solve.value += '1'">1</div>
+            <div class="dive" id="two" onclick="cal.solve.value += '2'">2</div>
+            <div class="dive" id="three" onclick="cal.solve.value += '3'">3</div>
+            <div class="btn" id="add" onclick="cal.solve.value += '+'">+</div>
+
+            <div class="dive" id="zero" onclick="cal.solve.value += '00'">00</div>
+            <div class="dive" id="zero" onclick="cal.solve.value += '0'">0</div>
+            <div class="dive" id="dot" onclick="cal.solve.value += '.'">.</div>
+            <div class="btn" id="equ" onclick="cal.answer.value = eval(cal.solve.value)">=</div>
+
+
+          </section>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <script src="brain.js"></script>
+
+  </body>
+
+</html>
+<!--
+Visual Code Mobile
+Developed By Manish Nirmal
+App Available on Play Store :-
+https://play.google.com/store/apps/details?id=lk.visual.code.mobile
+YouTube :-
+https://youtube.com/ManishNirmal
+-->

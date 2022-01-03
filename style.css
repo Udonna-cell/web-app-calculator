@@ -1,0 +1,106 @@
+* {
+				margin: 0;
+				padding: 0;
+}
+main::selection {
+				background-color: #52ac00;
+				color: #ffffea;
+}
+main {
+				background-color: #d4cbb1;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+}
+
+.calculator {
+				background-color: #ddd;
+				padding: 20px;
+				border-radius: 20px;
+				box-shadow: 10px 10px #aaa,
+				15px 15px 5px rgba(10,10,10,0.3);
+				margin: auto;
+				width: 230px;
+}
+
+.screen {
+				background-color: #eee;
+				padding: 10px;
+				text-align: right;
+				padding-top: 60px;
+				border-radius: 10px;
+}
+.screen input#solve {
+				font-family: monospace;
+				font-size: large;
+				font-weight: bold;
+				border: none;
+				outline: none;
+				text-align: right;
+}
+
+.screen input#answer {
+				font-family: serif;
+				font-size: 1rem;
+				font-weight: lighter;
+				border: none;
+				outline: none;
+				text-align: right;
+}
+
+hr {
+				margin: 7px;
+				opacity: 0.6;
+}
+
+.contain {
+				display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; 
+  column-gap: 8px;
+  row-gap: 15px;
+}
+
+.btn {
+				background-color: #000;
+				color: #fff;
+				text-align: center;
+				padding: 16px;
+				border-radius: 9px;
+				font-weight: bold;
+				border: none;
+				outline: none;
+				text-transform: uppercase;
+}
+section.contain .dive {
+				background-color: #fff;
+				color: #000;
+				text-align: center;
+				padding: 16px;
+				border-radius: 9px;
+				font-weight: bold;
+				border: none;
+				outline: none;
+				text-transform: uppercase;
+}
+
+.btn:hover {
+				background-color: #ff3400;
+				color: #fff;
+}
+
+section.contain .dive:hover {
+				background-color: #8098ff;
+				color: #fff;
+}
+
+.cancel {
+				width: 100%;
+}
+
+@media(min-width: 900px){
+				.calculator {
+								width: 20vw;
+				}
+}
